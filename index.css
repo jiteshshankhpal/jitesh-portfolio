@@ -15,8 +15,16 @@ body {
 /* header */
 
 header {
-    height: 45px;
+    display: flex;
+    height: 50px;
     background-color: rgba(0, 0, 0, 0.432);
+    align-items: center;
+    justify-content: end;
+    margin-right: 1em;
+}
+
+.ham-icon {
+    height: 25px;
 }
 
 /* main */
@@ -49,7 +57,7 @@ strong {
 
 .icons {
     display: grid;
-    grid-template: repeat(3, 140px)/ repeat(3, 100px);
+    grid-template: repeat(2, 140px)/ repeat(3, 100px);
     grid-gap: 25px;
     text-align: center;
 }
