@@ -20,11 +20,11 @@ header {
     background-color: rgba(0, 0, 0, 0.432);
     align-items: center;
     justify-content: end;
-    margin-right: 1em;
 }
 
 .ham-icon {
     height: 25px;
+     margin-right: 1em;
 }
 
 /* main */
