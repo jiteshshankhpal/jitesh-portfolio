@@ -37,7 +37,7 @@ h1 {
     align-self: start;
 }
 
-main p {
+.main-body {
     line-height: 1.3em;
     margin-bottom: 4em;
     letter-spacing: 1px;
@@ -49,8 +49,9 @@ strong {
 
 .icons {
     display: grid;
-    grid-template: repeat(3, 100px)/ repeat(3, 100px);
+    grid-template: repeat(3, 140px)/ repeat(3, 100px);
     grid-gap: 25px;
+    text-align: center;
 }
 
 .icon {
@@ -59,4 +60,8 @@ strong {
     background-color: rgba(0, 0, 0, 0.37);
     box-shadow: 0.25em 0.25em 0.75em rgba(97, 97, 97, 0.253);
     padding: 0.5em;
+}
+
+.icon-text {
+    margin-top: 0.4em;
 }
