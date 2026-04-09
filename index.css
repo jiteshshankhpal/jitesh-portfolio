@@ -42,16 +42,21 @@ header a {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 30%;
+    left: 40%;
     right: 0;
     background-color: rgba(0, 0, 0, 0.808);
     border-radius: 1em;
     z-index: 2;
     visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 450ms cubic-bezier(.5,0, .5,1),
+        visibility 0s linear 450ms;
 }
 
 .nav-section.active{
-   visibility: visible;
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 450ms cubic-bezier(.5,0,.5,1);
 }
 
 .x-icon {
@@ -77,11 +82,17 @@ header a {
 .menu > p{
     font-size: 1.5em;
     backdrop-filter: blur(10px);
-    padding: 0.2em 0.7em;
+    padding: 0.2em 1em;
     border-radius: 36px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.226);
+    margin: 2em 0;
+}
+
+.menu > p > a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* main */
@@ -93,7 +104,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     /* filter: blur(5px); */
+}
+
+.main-blur {
+    filter: blur(7px);
 }
 
 h1 {
