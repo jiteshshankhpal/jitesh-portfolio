@@ -7,6 +7,7 @@ hamEl.addEventListener('click', (e) => {
     e.preventDefault(); 
     navSec.classList.add('active');
     mainSec.classList.add('main-blur')
+
 });
 
 cancelBtn.addEventListener('click', (e) => {

@@ -9,15 +9,16 @@ body {
     background-attachment: fixed;
 
     font-family: 'Manrope';
-    color: rgba(240, 248, 255, 0.932);
+    color: #f0f8ffee;
+    overflow-x: hidden;
 
-    
 }
 
 /* header */
 
 header {
     display: flex;
+    width: 100%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.432);
     align-items: center;
@@ -25,8 +26,8 @@ header {
     padding-right: 1em;
 }
 
-header a {
-    font-size: 0;
+.header-menu {
+    display: none;
 }
 
 .ham-icon {
@@ -49,14 +50,14 @@ header a {
     z-index: 2;
     visibility: hidden;
     transform: translateX(100%);
-    transition: transform 450ms cubic-bezier(.5,0, .5,1),
-        visibility 0s linear 450ms;
+    transition: transform 750ms cubic-bezier(.5,0, .5,1),
+        visibility 750ms;
 }
 
 .nav-section.active{
     transform: translateX(0);
     visibility: visible;
-    transition: transform 450ms cubic-bezier(.5,0,.5,1);
+    transition: transform 750ms cubic-bezier(.5,0,.5,1);
 }
 
 .x-icon {
@@ -81,11 +82,8 @@ header a {
 
 .menu > p{
     font-size: 1.5em;
-    backdrop-filter: blur(10px);
     padding: 0.2em 1em;
     border-radius: 36px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.226);
     margin: 2em 0;
 }
@@ -118,9 +116,11 @@ h1 {
 }
 
 .main-body {
-    line-height: 1.3em;
+    line-height: 1.5em;
     margin-bottom: 4em;
     letter-spacing: 1px;
+    align-self: center;
+    max-width: 400px;
 }
 
 strong {
@@ -145,4 +145,64 @@ strong {
     letter-spacing: 3px;
     font-size: 0.8em;
     font-weight: 700;
+}
+
+/* desktop size */
+
+@media (min-width: 900px) {
+    .ham-icon {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-top: -20px;
+    }
+
+    .header-menu {
+        display: flex;
+    }
+
+    .header-menu > p > a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0 2em; 
+    }
+
+    .main-section {
+        margin: 0;
+        width: 40%;
+        float: right;
+        padding-right: 2em;
+    }
+
+    .main-body {
+        max-width: 80%;
+        align-self: normal;
+        line-height: 1.7em;
+        margin-bottom: 0;
+    }
+
+    .icons {
+        align-self: start;
+        margin-left: 2em;
+    }
+
+    .header_main_body {
+        border-left: 4px solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        #f0f8ffee,
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding-left: 2em;
+    }
+
 }
