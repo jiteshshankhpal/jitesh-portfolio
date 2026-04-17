@@ -183,6 +183,7 @@ strong {
     overflow: hidden;
     background-color: rgb(24, 24, 24);
     padding: 1em;
+    box-shadow: 0.25em 0.25em 0.75em rgba(102, 102, 102, 0.253);
 }
 
 .project-details {
@@ -208,6 +209,7 @@ strong {
     cursor: pointer;
     font-weight: 700;
     font-size: 0.8em;
+    margin-top: 1em;
 }
 
 
