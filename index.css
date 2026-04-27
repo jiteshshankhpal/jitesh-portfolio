@@ -302,4 +302,32 @@ strong {
         padding-left: 2em;
     }
 
+    .projects {
+        max-width: 750px;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-details {
+        order: 1;
+        max-width: 200px;
+        margin-right: 3em;
+    }
+
+    .project-img {
+        height: 280px;
+        width: 280px;
+        order: 2
+    }
+
+     .main-section-work {
+        margin-right: 3em;
+        width: 40%;
+        float: right;
+        padding-right: 2em;
+    }
+
 }
