@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="index.css">
         <title>Portfolio</title>
     </head>
-    <body>
+    <body class="contact-body">
         <header>
             <a class="ham-link" href="">
                 <img class="ham-icon" src="icons/ham-menu.svg" alt="">
@@ -18,12 +18,56 @@
                 <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="work.html">WORK</a></li>
-                    <li><a href="socials.html">SOCIALS</a></li>
                     <li><a href="contact.html" class="currentPage">CONTACT</a></li>
                 </ul>
             </div>
         </header>
-       
+        <section class="nav-section">
+            <a href="">
+                <img class="x-icon" src="icons/x.svg" alt="">
+            </a>
+            <div class="menu">
+                <p><a href="home.html">HOME</a></p>
+                <p><a href="work.html">Work</a></p>  
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </section>
+        <main class="main-section main-section-contact">
+            <div class="contact">
+                <div class="contact-form">
+                    <div class="contact-form-header">
+                        <img class="contact-pfp" src="./images/contact-pfp.PNG" alt="">
+                        <div>
+                            <h3>Have an idea?</h3>
+                            <p>Feel free to contact me</p>
+                        </div>
+                    </div>
+                    <input class="form-input" type="text" placeholder="Your Name">
+                    <input class="form-input" type="text" placeholder="Your Email">
+                    <input class="form-input about-yourself-input" type="text" placeholder="Shortly tell me about yourself">
+                    <button class="contact-btn">Contact me</button>
+                </div>
+                <div class="or-section">
+                    <div class="or-line"></div>
+                    <div class="or-text">or</div>
+                    <div class="or-line"></div>
+                </div>
+                <div class="contact-socials">
+                    <div class="contact-socials-items">
+                        <img class="contact-socials-img" src="icons/instagram.svg" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="contact-socials-items">
+                        <img class="contact-socials-img" src="icons/linkdin.svg" alt="">
+                        <p>LinkdIn</p>
+                    </div>
+                    <div class="contact-socials-items">
+                        <img class="contact-socials-img" src="icons/twitter.svg" alt="">
+                        <p>(twiiter)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
