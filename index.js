@@ -29,9 +29,5 @@ function sendMail(event) {
         then(() => {
             alert("Email Sent!");
             document.querySelector('form').reset();
-        }).
-        catch((error) => {
-            alert("Failed to send email: " + error.message);
-            console.error("Email error:", error);
         })
 }

@@ -220,6 +220,8 @@ strong {
 
 .contact-body {
     height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .main-section-contact {
