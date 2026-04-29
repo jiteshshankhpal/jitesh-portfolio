@@ -223,8 +223,8 @@ strong {
 }
 
 .main-section-contact {
-    position: absolute;
-    top:0;
+   position: absolute;
+    top:50px;
     right:0;
     bottom:0;
     left:0;
@@ -269,6 +269,8 @@ strong {
 }
 
 .form-input {
+    letter-spacing: 2px;
+    color: inherit;
     font-size: 1.1em;
     padding: 1.5em 0.8em;
     width: 100%;
@@ -349,6 +351,12 @@ strong {
 .contact-socials-img {
     width: 30px;
     height: 30px;
+}
+
+.socials-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.7em;
 }
 
 
@@ -467,6 +475,18 @@ strong {
         width: 40%;
         float: right;
         padding-right: 2em;
+    }
+
+    /* contact section */
+
+    .main-section-contact {
+        position: absolute;
+        top:50px;
+        right:0;
+        bottom:50px;
+        left:0;
+        margin:auto;
+        padding: 0;
     }
 
 }

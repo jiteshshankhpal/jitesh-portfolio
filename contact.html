@@ -7,6 +7,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "oGGJT-mcQSBQ_zZVk",
+            });
+        })();
+        </script>
+        <script src="index.js"></script>
         <title>Portfolio</title>
     </head>
     <body class="contact-body">
@@ -42,10 +53,15 @@
                             <p>Feel free to contact me</p>
                         </div>
                     </div>
-                    <input class="form-input" type="text" placeholder="Your Name">
-                    <input class="form-input" type="text" placeholder="Your Email">
-                    <input class="form-input about-yourself-input" type="text" placeholder="Shortly tell me about yourself">
-                    <button class="contact-btn">Contact me</button>
+                    <form>
+                        <label for="name"></label>
+                        <input class="form-input" type="text" placeholder="Your Name" id="name" name="name" required>
+                        <label for="email"></label>
+                        <input class="form-input" type="text" placeholder="Your Email" id="email" name="email" required>
+                        <label for="subject"></label>
+                        <input class="form-input about-yourself-input" type="text" placeholder="Shortly tell me about yourself" id="subject" name="subject" required>
+                        <button class="contact-btn" onclick="sendMail(event)" type="button">Contact me</button>
+                    </form>
                 </div>
                 <div class="or-section">
                     <div class="or-line"></div>
@@ -53,18 +69,24 @@
                     <div class="or-line"></div>
                 </div>
                 <div class="contact-socials">
-                    <div class="contact-socials-items">
-                        <img class="contact-socials-img" src="icons/instagram.svg" alt="">
-                        <p>Instagram</p>
-                    </div>
-                    <div class="contact-socials-items">
-                        <img class="contact-socials-img" src="icons/linkdin.svg" alt="">
-                        <p>LinkdIn</p>
-                    </div>
-                    <div class="contact-socials-items">
-                        <img class="contact-socials-img" src="icons/twitter.svg" alt="">
-                        <p>(twiiter)</p>
-                    </div>
+                    <a class="socials-link" href="#">
+                        <div class="contact-socials-items">
+                            <img class="contact-socials-img" src="icons/instagram.svg" alt="">
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                    <a class="socials-link" href="https://www.linkedin.com/feed/" target="_blank">
+                        <div class="contact-socials-items">
+                            <img class="contact-socials-img" src="icons/linkdin.svg" alt="">
+                            <p>LinkdIn</p>
+                        </div>
+                    </a>
+                    <a class="socials-link" href="#">
+                        <div class="contact-socials-items">
+                            <img class="contact-socials-img" src="icons/twitter.svg" alt="">
+                            <p>(twiiter)</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </main>

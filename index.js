@@ -16,3 +16,22 @@ cancelBtn.addEventListener('click', (e) => {
     mainSec.classList.remove('main-blur')
 })
 
+function sendMail(event) {
+    event.preventDefault();
+    
+    let parms = {
+        name :document.getElementById('name').value,
+        email : document.getElementById('email').value,
+        subject : document.getElementById('subject').value
+    }
+
+    emailjs.send("service_ibapxik","template_z4xptwp",parms).
+        then(() => {
+            alert("Email Sent!");
+            document.querySelector('form').reset();
+        }).
+        catch((error) => {
+            alert("Failed to send email: " + error.message);
+            console.error("Email error:", error);
+        })
+}
